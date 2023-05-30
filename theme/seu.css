@@ -3,24 +3,26 @@
 /** note: this is a base theme **/
 
 @import 'gaia';
-@import url('https://fonts.googleapis.com/css?family=Lato:400,900|Roboto+Mono:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gelasio&family=Lato&family=Noto+Sans:wght@200;400&family=Open+Sans&display=swap');
 
 :root {
     --body-font-size: 0.85em;
     --body-line-height: 1.5em;
     --color-code-background: #edeff0;
     --color-background: #fff;
-    --color-foreground: #333;
-    --color-highlight: #034774;
-    --logo: url("https://raw.githubusercontent.com/seumxc/SEU-Logo/master/%E4%B8%9C%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%A0%A1%E5%BE%BD/%E5%8E%9F%E9%85%8D%E8%89%B2.svg");
+    --color-foreground: #15231b;
+    --color-highlight: #253d24;
+    --logo: url("https://raw.githubusercontent.com/zhenyuwei99/marp-seu/main/asset/logo-2.svg");
+    /* --font-family: 'Gelasio', '楷体', serif; */
+    --font-family: 'Lato', '楷体', sans-serif;
 }
 
 section {
     background-image: var(--logo);
-    background-size: 20%;
+    background-size: 17%;
     background-repeat: no-repeat;
-    background-position: 98% 2%;
-    font-family: 'Lato', 'Roboto Mono', sans-serif;
+    background-position: 97% 1%;
+    font-family: var(--font-family);
     padding-top: 90px;
     padding-left: 40px;
     padding-right: 40px;
@@ -29,7 +31,7 @@ section {
 section::after {
     font-weight: 700;
     color: var(--color-foreground);
-    content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
+    content: attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);
 }
 
 ul ul {
@@ -46,53 +48,57 @@ section.chapter {
     justify-content: center;
 }
 
+section.lead {
+    background-image: none;
+}
+
 section.lead h1 {
-    color: var(--color-highlight);
+    color: var(--color-foreground);
     text-align: left;
 }
 
 section.lead h1 strong {
-    -webkit-text-stroke: 1px var(--color-highlight);
+    -webkit-text-stroke: 1px var(--color-foreground);
 }
 
 section.lead h2 {
-    color: var(--color-highlight);
+    color: var(--color-foreground);
+    font-size: 1.2em;
     text-align: left;
-}
-
-section.lead h2 strong {
-    -webkit-text-stroke: 1px var(--color-highlight);
 }
 
 section.lead h3 {
-    color: var(--color-highlight);
-    text-align: left;
-}
-
-section.lead h3 strong {
-    -webkit-text-stroke: 1px var(--color-highlight);
-}
-
-section.lead h4 {
-    color: var(--color-highlight);
-    text-align: left;
-}
-
-section.lead h4 strong {
-    -webkit-text-stroke: 1px var(--color-highlight);
-}
-
-section.lead h5 {
-    color: var(--color-highlight);
-    text-align: left;
-}
-
-section.lead h5 strong {
-    -webkit-text-stroke: 1px var(--color-highlight);
-}
-
-section.lead p {
+    color: var(--color-foreground);
+    font-size: 1.0em;
     text-align: right;
+}
+
+section.split {
+    overflow: visible;
+    display: grid;
+    grid-template-columns: 600px 600px;
+    grid-template-rows: 50px auto;
+    grid-template-areas: "leftpanel rightpanel";
+}
+
+/* debug */
+section.split h3,
+section.split .ldiv,
+section.split .rdiv {
+    border: 0pt dashed dimgray;
+}
+
+section.split h3 {
+    grid-area: slideheading;
+    font-size: 50px;
+}
+
+section.split .ldiv {
+    grid-area: leftpanel;
+}
+
+section.split .rdiv {
+    grid-area: rightpanel;
 }
 
 section p {
@@ -105,10 +111,9 @@ section li {
     line-height: var(--body-line-height);
 }
 
-
 header {
     background-color: var(--color-highlight);
-    margin-right: 25%;
+    margin-right: 22%;
     color: #fff;
     font-size: 1em;
     font-weight: 700;
@@ -120,7 +125,7 @@ blockquote {
     font-size: 70%;
     position: absolute;
     bottom: 20px;
-    font-family: "楷体", "楷体_GB2312", sans-serif;
+    font-family: var(--font-family);
     padding: 0 0.5em;
 }
 
