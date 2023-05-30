@@ -172,19 +172,12 @@ section.center {
 
 
 
-/* table {
-    color: #15231b;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: var(--body-font-size);
-} */
-
-
 table {
     empty-cells: show;
     border-collapse: collapse;
     margin: 0 auto;
     width: 85%;
+    font-size: var(--body-font-size);
 }
 
 td {
