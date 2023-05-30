@@ -1,0 +1,181 @@
+/* @theme buaa */
+
+/** note: this is a base theme **/
+
+@import 'gaia';
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900|Roboto+Mono:wght@100;400&display=swap');
+
+:root {
+    --body-font-size: 0.85em;
+    --body-line-height: 1.5em;
+    --color-code-background: #edeff0;
+    --color-background: #fff;
+    --color-foreground: #333;
+    --color-highlight: #034774;
+    --logo_red: url("https://github.com/seumxc/SEU-Logo/blob/master/%E4%B8%9C%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%A0%A1%E5%BE%BD/%E5%8E%9F%E9%85%8D%E8%89%B2.svg");
+}
+
+section {
+    background-image: var(--logo_blue);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 98% 2%;
+    font-family: 'Lato', 'Roboto Mono', sans-serif;
+    padding-top: 90px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+section::after {
+    font-weight: 700;
+    color: var(--color-foreground);
+    content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
+}
+
+ul ul {
+    font-size: 0.9em;
+}
+
+section.chapter {
+    color: var(--color-highlight);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    background-image: none !important;
+    justify-content: center;
+}
+
+section.lead h1 {
+    color: var(--color-highlight);
+    text-align: left;
+}
+
+section.lead h1 strong {
+    -webkit-text-stroke: 1px var(--color-highlight);
+}
+
+section.lead h2 {
+    color: var(--color-highlight);
+    text-align: left;
+}
+
+section.lead h2 strong {
+    -webkit-text-stroke: 1px var(--color-highlight);
+}
+
+section.lead h3 {
+    color: var(--color-highlight);
+    text-align: left;
+}
+
+section.lead h3 strong {
+    -webkit-text-stroke: 1px var(--color-highlight);
+}
+
+section.lead h4 {
+    color: var(--color-highlight);
+    text-align: left;
+}
+
+section.lead h4 strong {
+    -webkit-text-stroke: 1px var(--color-highlight);
+}
+
+section.lead h5 {
+    color: var(--color-highlight);
+    text-align: left;
+}
+
+section.lead h5 strong {
+    -webkit-text-stroke: 1px var(--color-highlight);
+}
+
+section.lead p {
+    text-align: right;
+}
+
+section p {
+    font-size: var(--body-font-size);
+    line-height: var(--body-line-height);
+}
+
+section li {
+    font-size: var(--body-font-size);
+    line-height: var(--body-line-height);
+}
+
+
+header {
+    background-color: var(--color-highlight);
+    margin-right: 25%;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+blockquote {
+    max-width: 85%;
+    border-top: 0.1em dashed #555;
+    font-size: 70%;
+    position: absolute;
+    bottom: 20px;
+    font-family: "楷体", "楷体_GB2312", sans-serif;
+    padding: 0 0.5em;
+}
+
+blockquote::before {
+    content: "";
+}
+
+blockquote::after {
+    content: "";
+}
+
+blockquote p {
+    text-align: left !important;
+    margin: 0;
+    padding: 0;
+}
+
+img[alt~="center"] {
+    display: block;
+    margin: 0 auto;
+}
+
+pre {
+    padding: 0.2em 0 !important;
+    margin: 0.2em 2em !important;
+    background-color: var(--color-code-background);
+    border: 1px solid #8395a7;
+    border-radius: 10px;
+}
+
+code {
+    border-radius: 15px !important;
+    background-color: var(--color-code-background);
+    color: var(--color-foreground);
+    padding: 0 0.5em !important;
+    font-family: 'Roboto Mono', monospace;
+}
+
+section.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+th {
+    background-color: #596275 !important;
+}
+
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: var(--body-font-size);
+}
+
+pre::part(auto-scaling) {
+    max-height: calc(580px - 2em);
+}
