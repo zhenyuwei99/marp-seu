@@ -12,11 +12,11 @@
     --color-background: #fff;
     --color-foreground: #333;
     --color-highlight: #034774;
-    --logo_red: url("https://raw.githubusercontent.com/seumxc/SEU-Logo/master/%E4%B8%9C%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%A0%A1%E5%BE%BD/%E5%8E%9F%E9%85%8D%E8%89%B2.svg");
+    --logo: url("https://raw.githubusercontent.com/seumxc/SEU-Logo/master/%E4%B8%9C%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%A0%A1%E5%BE%BD/%E5%8E%9F%E9%85%8D%E8%89%B2.svg");
 }
 
 section {
-    background-image: var(--logo_blue);
+    background-image: var(--logo);
     background-size: 20%;
     background-repeat: no-repeat;
     background-position: 98% 2%;
