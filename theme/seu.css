@@ -120,13 +120,13 @@ header {
 }
 
 blockquote {
-    max-width: 85%;
+    margin-right: 10%;
     border-top: 0.1em dashed #555;
     font-size: 70%;
     position: absolute;
     bottom: 20px;
     font-family: var(--font-family);
-    padding: 0 0.5em;
+    padding: 0 1.5em;
 }
 
 blockquote::before {
@@ -170,17 +170,27 @@ section.center {
     align-items: center;
 }
 
-th {
-    background-color: #596275 !important;
-}
+
+
+/* table {
+    color: #15231b;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: var(--body-font-size);
+} */
 
 
 table {
-    margin-left: auto;
-    margin-right: auto;
-    color: var(--color-highlight);
-    font-size: var(--body-font-size);
+    empty-cells: show;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 85%;
 }
+
+td {
+    height: 30px;
+}
+
 
 pre::part(auto-scaling) {
     max-height: calc(580px - 2em);
