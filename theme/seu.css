@@ -178,6 +178,7 @@ th {
 table {
     margin-left: auto;
     margin-right: auto;
+    color: var(--color-highlight);
     font-size: var(--body-font-size);
 }
 
