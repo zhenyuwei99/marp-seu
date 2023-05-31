@@ -69,6 +69,12 @@ section.lead h3 {
     text-align: right;
 }
 
+section.lead p {
+    color: var(--color-foreground);
+    font-size: 1.0em;
+    text-align: right;
+}
+
 section.split {
     overflow: visible;
     display: grid;
