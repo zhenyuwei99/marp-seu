@@ -12,16 +12,12 @@
     --color-background: #fff;
     --color-foreground: #15231b;
     --color-highlight: #253d24;
-    --logo: url("https://raw.githubusercontent.com/zhenyuwei99/marp-seu/main/asset/logo-2.svg");
+    --logo: url("https://raw.githubusercontent.com/zhenyuwei99/marp-seu/main/asset/logo-white.svg");
     /* --font-family: 'Gelasio', '楷体', serif; */
     --font-family: 'Lato', '楷体', sans-serif;
 }
 
 section {
-    background-image: var(--logo);
-    background-size: 17%;
-    background-repeat: no-repeat;
-    background-position: 97% 1%;
     font-family: var(--font-family);
     padding-top: 90px;
     padding-left: 40px;
@@ -112,8 +108,11 @@ section li {
 }
 
 header {
+    background-image: var(--logo);
+    background-size: 17%;
+    background-repeat: no-repeat;
+    background-position: 97% 1%;
     background-color: var(--color-highlight);
-    margin-right: 22%;
     color: #fff;
     font-size: 1em;
     font-weight: 700;
